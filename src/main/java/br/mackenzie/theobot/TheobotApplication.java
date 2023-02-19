@@ -30,6 +30,7 @@ public class TheobotApplication {
                 )
                 .build();
 
+
         jda.upsertCommand("ping", "comando de teste").setGuildOnly(true).queue();
         SpringApplication.run(TheobotApplication.class, args);
     }
