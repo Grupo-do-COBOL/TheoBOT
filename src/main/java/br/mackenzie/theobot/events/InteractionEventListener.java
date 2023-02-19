@@ -11,12 +11,8 @@ public class InteractionEventListener extends ListenerAdapter {
         System.out.println("[Console] O modulo de interacao está funcionando");
         switch (event.getName()) {
             case "ping":
-                event.reply("Pong").queue();
+                event.reply("Pong Pong").queue();
                 break;
-            case "teste":
-                event.reply("O teste funcionou").queue();
-                break;
-
         }
 
 
