@@ -22,6 +22,12 @@ jobs:
       
     - name: Build with Maven
       run: mvn clean install
+
+    - name: Reload Daemon
+      run: sudo systemctl daemon-reload
+
+    - name: Restart Bot
+      run: sudo systemctl restart theobot.service
       
 
       
