@@ -13,6 +13,9 @@ public class InteractionEventListener extends ListenerAdapter {
             case "ping":
                 event.reply("Pong").queue();
                 break;
+            case "teste":
+                event.reply("O teste funcionou").queue();
+                break;
 
         }
 
