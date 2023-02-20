@@ -7,6 +7,7 @@ import br.mackenzie.theobot.events.ReadyEventListener;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
+import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -32,6 +33,7 @@ public class TheobotApplication {
 
 
         jda.upsertCommand("ping", "comando de teste").setGuildOnly(true).queue();
+        jda.upsertCommand("teste", "comando de teste").addOption(OptionType.STRING,"teste","esse e um teste").queue();
         SpringApplication.run(TheobotApplication.class, args);
     }
 }

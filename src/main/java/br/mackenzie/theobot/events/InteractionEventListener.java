@@ -4,6 +4,8 @@ import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEve
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Objects;
+
 public class InteractionEventListener extends ListenerAdapter {
     @Override
     public void onSlashCommandInteraction(@NotNull SlashCommandInteractionEvent event) {
@@ -12,6 +14,9 @@ public class InteractionEventListener extends ListenerAdapter {
         switch (event.getName()) {
             case "ping":
                 event.reply("Pong").queue();
+                break;
+            case "teste":
+                event.reply("Seu teste deu certo, sua mensagem foi: " + Objects.requireNonNull(event.getOption("teste")).getAsString()).queue();
                 break;
         }
 
