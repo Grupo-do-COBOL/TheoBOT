@@ -31,9 +31,9 @@ public class TheobotApplication {
                 )
                 .build();
 
-
         jda.upsertCommand("ping", "comando de teste").setGuildOnly(true).queue();
         jda.upsertCommand("teste", "comando de teste").addOption(OptionType.STRING,"teste","esse e um teste").queue();
+
         SpringApplication.run(TheobotApplication.class, args);
     }
 }

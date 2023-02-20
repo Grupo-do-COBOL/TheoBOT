@@ -15,9 +15,13 @@ public class InteractionEventListener extends ListenerAdapter {
             case "ping":
                 event.reply("Pong").queue();
                 break;
-            case "teste":
+//            case "teste":
+//                event.reply("Seu teste deu certo, sua mensagem foi: " + Objects.requireNonNull(event.getOption("teste")).getAsString()).queue();
+//                break;
+                case "teste":
                 event.reply("Seu teste deu certo, sua mensagem foi: " + Objects.requireNonNull(event.getOption("teste")).getAsString()).queue();
                 break;
+
         }
 
 
