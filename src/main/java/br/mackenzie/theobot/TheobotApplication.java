@@ -32,7 +32,7 @@ public class TheobotApplication {
                 .build();
 
         jda.upsertCommand("ping", "comando de teste").setGuildOnly(true).queue();
-        jda.upsertCommand("teste", "comando de teste").addOption(OptionType.STRING,"teste","esse e um teste").queue();
+        jda.upsertCommand("repeat", "Repete a mensagem").addOption(OptionType.STRING,"repetir","Mensagem a ser repetida pelo Theo!").queue();
 
         SpringApplication.run(TheobotApplication.class, args);
     }
