@@ -19,11 +19,11 @@ public class InteractionEventListener extends ListenerAdapter {
         switch (event.getName()) {
             case "ping":
 
-                try {
-                    System.out.println(calendario.conexaoLoginMoodle());
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
+//                try {
+////                    System.out.println(calendario.conexaoLoginMoodle());
+//                } catch (IOException e) {
+//                    throw new RuntimeException(e);
+//                }
                 event.reply("Este e um pong").queue();
                 break;
         }
